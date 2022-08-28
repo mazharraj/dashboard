@@ -1,0 +1,170 @@
+.svg{
+    height: 40px;
+    width: 40px;
+    background-color: rgb(238, 238, 238);
+    
+}
+svg{
+    padding: 4px;
+    
+}
+.svgone{
+    color: rgb(247, 104, 104);
+    height: 40px;
+    width: 40px;
+    
+}
+.svgtwo{
+    color: blueviolet;
+}
+
+.svgthree{
+    color: blue;
+}
+.ps-5.divid{
+    padding-left: 8em !important;
+}
+/*----=====Left Menu section=====-----*/
+.leftmenu{
+    background-color: rgb(250, 250, 250) !important;
+    height: 200vh;
+}
+
+
+#toppart{
+    background-color: rgb(238, 238, 238);
+}
+
+/*----=====card section=====-----*/
+.gains{
+    font-size: 50px !important;
+    color: rgb(84, 201, 84);
+}
+.cash{
+    font-size: 50px !important;
+    color: rgb(201, 102, 84);
+}
+.invested{
+    font-size: 50px !important;
+    color: rgb(125, 84, 201);
+}
+/*----=====card section svg background=====-----*/
+.laptop{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(84, 201, 84);
+    border-radius: 100%;
+    margin-right: 15px;
+}
+
+.mobile{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(201, 102, 84);
+    border-radius: 100%;
+    margin-right: 15px;
+}
+
+.coin{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(125, 84, 201);
+    border-radius: 100%;
+    margin-right: 15px;
+}
+/*----=====card section svg =====-----*/
+.laptop svg{
+    color: #fff;
+    padding: 10px;
+}
+.mobile svg{
+    color: #fff;
+    padding: 10px;
+}
+.coin svg{
+    color: #fff;
+    padding: 10px;
+}
+
+.chat{
+    background-color: beige;
+    margin:0 40px 0 20px;
+    padding: 0 5px 15px 15px;
+    border-radius: 0 25px 25px 25px;
+}
+.chat2{
+    background-color: beige;
+    margin:0 20px 0 40px;
+    padding: 0 5px 15px 15px;
+    border-radius: 25px 0 25px 25px;
+}
+.chat1-time{
+    margin-left: 70px;
+}
+.chat2-time{
+    margin-left: 280px;
+}
+
+
+
+/*-------===================================
+===============RESPONSIVE AREAS ============
+====================================-------*/
+
+
+/*-------EXTRA SMALL -------*/
+@media only screen and (min-width: 360px) {
+    .chat2-time{
+        margin-left: 110px;
+    }
+}
+
+/*------- SMALL (sm)-------*/
+@media only screen and (min-width: 576px) {
+    .chat2-time{
+        margin-left: 260px;
+    }
+}
+
+/*-------MEDIUM (md)-------*/
+@media only screen and (min-width: 768px) {
+    .chat2-time{
+        margin-left: 200px;
+    }
+}
+
+/*-------LARGE (lg)-------*/
+@media only screen and (min-width: 992px) {
+    .ps-5.divid{
+        padding-left: 0em !important;
+    }
+    .chat2-time{
+        margin-left: 150px;
+    }
+}
+
+
+
+/*-------EXTRA LARGE (xl)-------*/
+@media only screen and (min-width: 1200px) { 
+    /*-------======== nav bar ========--------*/   
+.ps-5.divid{
+    padding-left: 2em !important;
+}
+
+svg{
+    padding: 3px;
+    
+}
+/*-------======== chat box ========--------*/
+
+.chat2-time{
+    margin-left: 250px;
+}
+}
+
+
+
+/*-------EXTRA EXTRA LARGE (xxl)-------*/
+@media only screen and (min-width: 1400px) {
+}

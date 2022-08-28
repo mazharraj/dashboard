@@ -1,0 +1,39 @@
+
+.b-cover{
+    background-size: cover;
+}
+.b-center{
+    background-position: center;
+}
+
+/*-----==font style==-----*/
+.fnt-basic{
+    font-size: 16px;
+    color: #4B4F54;
+}
+
+
+.fnt-exlarge{
+    font-size: 40px !important;
+}
+
+.fnt-medium{
+    font-weight: 600 !important;
+    font-size: 21px !important;
+    line-height: 24px !important;
+
+}
+
+.fnt-size-22{
+    font-size: 22px !important;
+}
+
+
+.fnt-bold{
+    font-weight: bold !important;
+}
+
+/*-----==font color==-----*/
+.fnt-red{
+    color: #F2674B !important;
+}
