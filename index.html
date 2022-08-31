@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mazhar Dashboard</title>
+    <title>Mazharul Islam 4</title>
     <link type="text/css" rel="stylesheet" href="global.css">
     <link type="text/css" rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 </head>
 <body>
     <!---==navbar start===--->
@@ -316,11 +317,43 @@
                                             <!----=======--->
                                             <p class="lead text-muted">NEW ACCOUNTS SINCE 2018</p>
                                             <!----=======--->
-                                            <h2 class="fw-bold">78%</h2>
+                                            
                                         </div>
-                                        <!----=======--->
-                                        <img src="./image/nav/chart.jpg" alt="" class="img-fluid mx-auto d-block">
-                                        <!----=======--->
+                                        <!----=== line chart start ====--->
+                                        <canvas id="myChartpie" style="width:100%;max-width:400px" class="mx-auto"></canvas>
+                                        
+                                        <script>
+                                        var xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
+                                        var yValues = [55, 49, 44, 24, 15];
+                                        var barColors = [
+                                        "#b91d47",
+                                        "#00aba9",
+                                        "#2b5797",
+                                        "#e8c3b9",
+                                        "#1e7145"
+                                        ];
+
+                                        new Chart("myChartpie", {
+                                        type: "pie",
+                                        data: {
+                                            labels: xValues,
+                                            datasets: [{
+                                            backgroundColor: barColors,
+                                            data: yValues
+                                            }]
+                                        },
+                                        options: {
+                                            title: {
+                                            display: true,
+                                           
+                                            }
+                                        }
+                                        });
+                                        </script>
+                                        
+
+                                        <!----=== line chart end ====--->
+
                                         <p class="lead">SALES PROGRESS</p>
                                     </div>
                                         <!----=======--->    
@@ -407,7 +440,28 @@
                                         <div class="card-body">
                                             <h2>$874</h2>
                                             <p>sales last month</p>
-                                            <img src="./image/nav/chart2.jpg" alt="" class="img-fluid">
+                                            <canvas id="myChartred" style="width:100%;max-width:600px"></canvas>
+
+                                            <!-----===== chart red =====-->
+                                            <script>
+                                            var xValues = [100,200,300,400,500,600,700,800,900,1000];
+
+                                            new Chart("myChartred", {
+                                            type: "line",
+                                            data: {
+                                                labels: xValues,
+                                                datasets: [{ 
+                                                data: [860,1140,990,1060,556,1110,780,1234,780,990],
+                                                borderColor: "red",
+                                                fill: false
+                                                }]
+                                            },
+                                            options: {
+                                                legend: {display: false}
+                                            }
+                                            });
+                                            </script>
+                                            <!------====chart red end====-->
                                         </div>                                        
                                     </div>
                                 </div>
@@ -416,7 +470,27 @@
                                         <div class="card-body">
                                             <h2>$874</h2>
                                             <p>sales last month</p>
-                                            <img src="./image/nav/chart3.jpg" alt="" class="img-fluid">
+                                            <!-----===== chart red =====-->
+                                            <canvas id="myChartblue" style="width:100%;max-width:600px"></canvas>
+
+                                            <script>
+                                            var xValues = [100,200,300,400,500,600,700,800,900,1000];
+
+                                            new Chart("myChartblue", {
+                                            type: "line",
+                                            data: {
+                                                labels: xValues,
+                                                datasets: [{ 
+                                                data: [860,1140,990,1060,556,1110,780,1234,780,990],
+                                                borderColor: "blue",
+                                                fill: false
+                                                }]
+                                            },
+                                            options: {
+                                                legend: {display: false}
+                                            }
+                                            });
+                                            </script>
                                         </div>                                        
                                     </div>
                                 </div>
@@ -425,7 +499,27 @@
                                         <div class="card-body">
                                             <h2>$874</h2>
                                             <p>sales last month</p>
-                                            <img src="./image/nav/chart4.jpg" alt="" class="img-fluid">
+                                            <!-----===== chart red =====-->
+                                            <canvas id="myChartgreen" style="width:100%;max-width:600px"></canvas>
+
+                                            <script>
+                                            var xValues = [100,200,300,400,500,600,700,800,900,1000];
+
+                                            new Chart("myChartgreen", {
+                                            type: "line",
+                                            data: {
+                                                labels: xValues,
+                                                datasets: [{ 
+                                                data: [860,1140,990,1060,556,1110,780,1234,780,990],
+                                                borderColor: "green",
+                                                fill: false
+                                                }]
+                                            },
+                                            options: {
+                                                legend: {display: false}
+                                            }
+                                            });
+                                            </script>
                                         </div>                                        
                                     </div>
                                 </div>
@@ -434,7 +528,27 @@
                                         <div class="card-body">
                                             <h2>$874</h2>
                                             <p>sales last month</p>
-                                            <img src="./image/nav/chart5.jpg" alt="" class="img-fluid">
+                                            <!-----===== chart red =====-->
+                                            <canvas id="myChartblack" style="width:100%;max-width:600px"></canvas>
+
+                                            <script>
+                                            var xValues = [100,200,300,400,500,600,700,800,900,1000];
+
+                                            new Chart("myChartblack", {
+                                            type: "line",
+                                            data: {
+                                                labels: xValues,
+                                                datasets: [{ 
+                                                data: [860,1140,990,1060,556,1110,780,1234,780,990],
+                                                borderColor: "black",
+                                                fill: false
+                                                }]
+                                            },
+                                            options: {
+                                                legend: {display: false}
+                                            }
+                                            });
+                                            </script>
                                         </div>                                        
                                     </div>
                                 </div>
@@ -847,6 +961,11 @@
         <p class="my-4 text-muted text-center">Developed by <span class="fw-bold text-success">MAZHAR RAJ</span></p>
     </section>  
     <!-----==== main body part end ===----->  
+
+
+
+
+
     
 
     <script src="js/bootstrap.min.js"></script>
